@@ -52,7 +52,7 @@
         ?>
         <br><br>
 
-                <!-- Button to Add Admin -->
+                <!-- Button to Add Category -->
                 <a href="<?php echo SITEURL; ?>admin/add-category.php" class="btn-primary">Add Category</a>
 
                 <br /><br /><br />
@@ -103,7 +103,7 @@
                                         <td>
 
                                             <?php  
-                                                //Chcek whether image name is available or not
+                                                //Check whether image name is available or not
                                                 if($image_name!="")
                                                 {
                                                     //Display the Image

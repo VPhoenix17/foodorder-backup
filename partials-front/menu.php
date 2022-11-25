@@ -17,7 +17,7 @@
     <section class="navbar">
         <div class="container">
             <div class="logo">
-                <a href="#" title="Logo">
+                <a href="<?php echo SITEURL; ?>index.php" title="Logo">
                     <img src="images/final.png" alt="Restaurant Logo" class="img-responsive">
                 </a>
             </div>

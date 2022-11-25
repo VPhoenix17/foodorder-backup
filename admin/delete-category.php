@@ -31,9 +31,38 @@
             }
         }
 
+
+
+
+
+        //Delete food for category test 0
+
+        $sql2 = "DELETE FROM tbl_food WHERE category_id=$id";
+        //Execute the Query
+        $res2 = mysqli_query($conn, $sql2);
+
+        //CHeck whether the query executed or not and set the session message respectively
+        //4. Redirect to Manage Food with Session Message
+        if($res2==true)
+        {
+            //Food Deleted
+            $_SESSION['delete'] = "<div class='success'>Food Deleted Successfully.</div>";
+            header('location:'.SITEURL.'admin/manage-food.php');
+        }
+        else
+        {
+            //Failed to Delete Food
+            $_SESSION['delete'] = "<div class='error'>Failed to Delete Food.</div>";
+            header('location:'.SITEURL.'admin/manage-food.php');
+        }
+
+
+
+
         //Delete Data from Database
         //SQL Query to Delete Data from Database
         $sql = "DELETE FROM tbl_category WHERE id=$id";
+        
 
         //Execute the Query
         $res = mysqli_query($conn, $sql);
@@ -43,7 +72,7 @@
         {
             //SEt Success MEssage and REdirect
             $_SESSION['delete'] = "<div class='success'>Category Deleted Successfully.</div>";
-            //Redirect to Manage Category
+            //Redirect to Manage Category 
             header('location:'.SITEURL.'admin/manage-category.php');
         }
         else
@@ -53,6 +82,9 @@
             //Redirect to Manage Category
             header('location:'.SITEURL.'admin/manage-category.php');
         }
+
+
+        
 
  
 

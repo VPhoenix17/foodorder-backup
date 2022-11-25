@@ -12,7 +12,7 @@
             ?>
 
 
-            <h2><a href="#" class="text-white">Foods on Your Search "<?php echo $search; ?>"</a></h2>
+            <h2><a href="#" class="text-white">Foods on Your Search <b><i><u><?php echo $search; ?></i></b></u></a></h2>
 
         </div>
     </section>

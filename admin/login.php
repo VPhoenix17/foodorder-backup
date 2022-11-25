@@ -36,7 +36,7 @@
             <input type="password" name="password" placeholder="Enter Password"><br><br>
 
             <input type="submit" name="submit" value="Login" class="btn-primary">
-            <br><br>
+            <br>
             </form>
             <!-- Login Form Ends HEre -->
 

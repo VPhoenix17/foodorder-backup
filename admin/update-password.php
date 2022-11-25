@@ -113,7 +113,7 @@
                         else
                         {
                             //REdirect to Manage Admin Page with Error Message
-                            $_SESSION['pwd-not-match'] = "<div class='error'>Password Did not Patch. </div>";
+                            $_SESSION['pwd-not-match'] = "<div class='error'>Password Did not Match. </div>";
                             //Redirect the User
                             header('location:'.SITEURL.'admin/manage-admin.php');
 

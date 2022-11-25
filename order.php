@@ -78,7 +78,7 @@
                         <input type="hidden" name="price" value="<?php echo $price; ?>">
 
                         <div class="order-label">Quantity</div>
-                        <input type="number" name="qty" class="input-responsive" value="1" required>
+                        <input type="number" name="qty" min="1" class="input-responsive" value="1" required>
                         
                     </div>
 
@@ -87,13 +87,13 @@
                 <fieldset>
                     <legend>Delivery Details</legend>
                     <div class="order-label">Full Name</div>
-                    <input type="text" name="full-name" placeholder="E.g. William Moore" class="input-responsive" required>
+                    <input type="text" name="full-name" placeholder="E.g. John Doe" class="input-responsive" required>
 
                     <div class="order-label">Phone Number</div>
-                    <input type="tel" name="contact" placeholder="E.g. 7410000000" class="input-responsive" required>
+                    <input type="tel" name="contact" placeholder="E.g. 8888888888" class="input-responsive" pattern="[1-9]{1}[0-9]{9}" required>
 
                     <div class="order-label">Email</div>
-                    <input type="email" name="email" placeholder="E.g. william@codeastro.com" class="input-responsive" required>
+                    <input type="email" name="email" placeholder="E.g. erp@mitwpu.edu.in" class="input-responsive" required>
 
                     <div class="order-label">Address</div>
                     <textarea name="address" rows="10" placeholder="E.g. Street, City, Country" class="input-responsive" required></textarea>

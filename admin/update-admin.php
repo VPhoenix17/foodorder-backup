@@ -103,7 +103,7 @@
         else
         {
             //Failed to Update Admin
-            $_SESSION['update'] = "<div class='error'>Failed to Delete Admin.</div>";
+            $_SESSION['update'] = "<div class='error'>Failed to Update Admin.</div>";
             //Redirect to Manage Admin Page
             header('location:'.SITEURL.'admin/manage-admin.php');
         }
